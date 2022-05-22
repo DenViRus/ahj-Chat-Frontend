@@ -1,5 +1,6 @@
-# EventSource, WebSockets
+# EventSource, WebSockets  [![Build status](https://ci.appveyor.com/api/projects/status/92ufyaxn0wt1a529?svg=true)](https://ci.appveyor.com/project/DenViRus/ahj-chat-frontend)
 
+[[Github Pages]()]
 ## Чат: Frontend
 
 ### Легенда
