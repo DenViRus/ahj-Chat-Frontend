@@ -1,0 +1,306 @@
+.modal-box {
+  background-color: rgb(222, 184, 135, 0.5);
+  width: 50%;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container {
+  display: flex;
+  position: relative;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: rgb(190, 101, 68, 0.5);
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-container:first-child {
+  margin-top: 5px;
+}
+
+.modal-container:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.name-input {
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(228, 185, 133, 0.5)
+}
+
+.radio-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(228, 185, 133, 0.5);
+
+}
+
+.radio-label {
+  display: flex;
+}
+
+.modal-radio {
+  position: relative;
+  clip: rect(1px 1px 1px 1px);
+  width: 1px;
+  height: 1px;
+}
+
+.radio-sign {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-color: rgb(66, 64, 64, 0);
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-radio:checked ~ .radio-sign {
+  border-color: white;
+  opacity: 1;
+}
+
+.modal-radio:hover ~ .radio-sign {
+  opacity: 1;
+}
+
+.modal-button {
+  width: 30%;
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 0, 255, 0.5);
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  border-color: white;
+  background-color: green;
+}
+
+.error-span {
+  width: 98%;
+  font-size: 20px;
+  padding: 3px;
+  color: red;
+  background-color: rgb(235, 201, 161);
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+}
+
+.error-span::before {
+  content: "";
+  top: -20px;
+  left: calc(50% - 10px);
+  border: 10px solid transparent;
+  border-bottom: 10px solid red;
+  position: absolute;
+}
+
+.error-span::after {
+  content: "";
+  top: -19px;
+  left: calc(50% - 10px);
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgb(235, 201, 161);;
+  position: absolute;
+}
+
+.chat-box {
+  width: 95%;
+  height: 95%;
+  background-color: rgb(222, 184, 135, 0.5);
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  cursor: default;
+}
+
+.user-container {
+  width: 40%;
+  align-self: flex-start;
+  margin-top: 5%;
+  border-top: 2px solid black;
+  border-radius: 10px;
+}
+
+.message-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid black;
+  border-radius: 10px;
+}
+
+.chat-list {
+  list-style-type: none;
+}
+
+.message-list {
+  flex-grow: 1;
+  padding: 5px;
+  border-bottom: 2px solid #000;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.message-form {
+  padding: 5px;
+}
+
+.message-input {
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(228, 185, 133, 0.5)
+}
+
+.user-item {
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 5px;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+}
+
+.user-item:nth-child(n + 2) {
+  margin-top: 10px;
+  border-top: 2px solid black;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+
+}
+
+.user-label {
+  display: flex;
+}
+
+.user-check {
+  position: relative;
+  clip: rect(1px 1px 1px 1px);
+  width: 1px;
+  height: 1px;
+}
+
+.user-sign {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/unchecked.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-check:checked ~ .user-sign {
+  background-image: url("../img/checked.png");
+}
+
+.user-name-box {
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.user-color-box {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.user-button-box {
+  margin-left: auto;
+}
+
+
+.user-delete-button {
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.user-delete-button:hover {
+  color: white;
+  background-color: red;
+  border-color: white;
+}
+
+.message-item {
+  width: 70%;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.message-data {
+  display: flex;
+  align-items: center;
+}
+
+.message-user-box {
+  margin-left: 10px;
+}
+
+.message-created-box {
+  margin-left: 10px;
+}
+
+.message-user-created {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.message-color-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.noValid {
+  color: red;
+  border-color: red;
+}
