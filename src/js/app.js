@@ -11,7 +11,7 @@ const chatUI = new ChatUI();
 const chatUser = new ChatUser();
 const chatMessage = new ChatMessage();
 const chatModal = new ChatModal();
-const chatSocket = new ChatSocket('ws://chat-serb-heroku.herokuapp.com//ws');
+const chatSocket = new ChatSocket('wss://chat-serb-heroku.herokuapp.com//ws');
 const chatRequest = new ChatRequest('https://chat-serb-heroku.herokuapp.com/');
 
 const сhatController = new ChatController(mainBox, chatUI, chatUser, chatMessage, chatModal, chatSocket, chatRequest);
